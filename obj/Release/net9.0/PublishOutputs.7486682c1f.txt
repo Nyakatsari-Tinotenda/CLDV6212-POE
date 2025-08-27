@@ -1,0 +1,17 @@
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\ABCRetail.StorageDemo.exe
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\appsettings.json
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\ABCRetail.StorageDemo.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\ABCRetail.StorageDemo.deps.json
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\ABCRetail.StorageDemo.runtimeconfig.json
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\ABCRetail.StorageDemo.pdb
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Core.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Data.Tables.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Storage.Blobs.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Storage.Common.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Storage.Files.Shares.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Azure.Storage.Queues.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\System.ClientModel.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\System.IO.Hashing.dll
+C:\Users\lab_services_student\source\repos\ABCRetail.StorageDemo\obj\Release\net9.0\PubTmp\Out\System.Memory.Data.dll

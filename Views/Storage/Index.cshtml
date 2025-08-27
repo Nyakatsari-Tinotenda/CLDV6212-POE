@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Azure Storage Demo";
+}
+<h2>Azure Storage Demo</h2>
+
+<!-- Add this button at the top -->
+<div class="mb-4">
+    <a asp-action="ViewData" class="btn btn-info">View All Data →</a>
+</div>
+
+<!-- Add this section at the top to display success/error messages -->
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<h3>Tables: Add Customer</h3>
+<form method="post" asp-action="AddCustomer">
+    <input name="first" placeholder="First" required />
+    <input name="last" placeholder="Last" required />
+    <input name="email" placeholder="Email" required />
+    <button type="submit">Add</button>
+</form>
+
+<h3>Tables: Add Product</h3>
+<form method="post" asp-action="AddProduct">
+    <input name="name" placeholder="Name" required />
+    <input name="sku" placeholder="SKU" required />
+    <input name="price" type="number" step="0.01" placeholder="Price" required />
+    <button type="submit">Add</button>
+</form>
+
+<h4>Customers (showing @ViewBag.Customers.Count)</h4>
+<ul>
+    @if (ViewBag.Customers != null)
+    {
+        @foreach (var c in (IEnumerable<CustomerEntity>)ViewBag.Customers)
+        {
+            <li>@c.FirstName @c.LastName - @c.Email</li>
+        }
+    }
+    else
+    {
+        <li>No customers found or could not load data.</li>
+    }
+</ul>
+
+<h4>Products (showing @ViewBag.Products.Count)</h4>
+<ul>
+    @if (ViewBag.Products != null)
+    {
+        @foreach (var p in (IEnumerable<ProductEntity>)ViewBag.Products)
+        {
+            <li>@p.Name (@p.Sku) - @p.Price.ToString("C")</li>
+        }
+    }
+    else
+    {
+        <li>No products found or could not load data.</li>
+    }
+</ul>
+
+<hr />
+<h3>Blob Storage: Upload Media</h3>
+<form method="post" asp-action="UploadMedia" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button type="submit">Upload</button>
+</form>
+<p>Existing blobs:</p>
+<ul>
+    @if (ViewBag.Blobs != null)
+    {
+        @foreach (var b in (IEnumerable<string>)ViewBag.Blobs)
+        {
+            <li>@b</li>
+        }
+    }
+    else
+    {
+        <li>No blobs found or could not load data.</li>
+    }
+</ul>
+
+<hr />
+<h3>Queue: Enqueue Order</h3>
+<form method="post" asp-action="EnqueueOrder">
+    <input name="orderId" placeholder="Order ID" required />
+    <button type="submit">Enqueue</button>
+</form>
+<p>(Check Azure Portal → Storage → Queues → orders to see messages.)</p>
+
+<hr />
+<h3>Azure Files: Upload Contract</h3>
+<form method="post" asp-action="UploadContract" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button type="submit">Upload</button>
+</form>
+<p>Existing files:</p>
+<ul>
+    @if (ViewBag.Files != null)
+    {
+        @foreach (var f in (IEnumerable<string>)ViewBag.Files)
+        {
+            <li>@f</li>
+        }
+    }
+    else
+    {
+        <li>No files found or could not load data.</li>
+    }
+</ul>
