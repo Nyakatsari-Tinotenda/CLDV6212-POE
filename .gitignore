@@ -1,0 +1,6 @@
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore all appsettings.json files (optional, safer)
+appsettings*.json
